@@ -209,10 +209,10 @@ footer {
 }
 @media (max-width: 500px) {
   .space-images .sky {
-    display: hidden;
+    display: none;
   }
   .space-images .blast {
-    display: hidden;
+    display: none;
   }
   .space-images .launch {
     width: 100%;
