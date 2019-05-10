@@ -36,18 +36,29 @@
       border-radius: 20px;
       height: 100%;
       padding: 15px;
+      webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+      transition: width 2s, height 2s, transform 2s;
+}
+
+      img:hover {
+          width: 300px;
+          height: 300px;
+          -webkit-transform: rotate(180deg); /* Safari */
+          transform: rotate(180deg);
+      }
 
       @media @phone {
         width: 100%;
       }
     
     }
-  }
+  
 
 @media @phone {
 
   .sky {
     display: none;
+    
   }
 
   .blast {
