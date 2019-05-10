@@ -193,10 +193,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro .main-img {
-  width: 100%;
-  border-radius: 30px;
-}
 .home .intro h2 {
   padding: 15px;
 }
@@ -205,6 +201,10 @@ footer {
 }
 .home .intro img {
   width: 100%;
+}
+.home .main-img {
+  width: 100;
+  border-radius: 20px;
 }
 .space-images {
   display: flex;
@@ -219,6 +219,11 @@ footer {
   padding: 15px;
 }
 @media (max-width: 500px) {
+  .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
   .sky {
     display: none;
   }
@@ -226,11 +231,6 @@ footer {
     display: none;
   }
   .launch {
-    margin-top: 60px;
-    border-top: 1px solid #dee2e6;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
     width: 100%;
   }
 }
