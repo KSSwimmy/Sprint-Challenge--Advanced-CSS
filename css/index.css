@@ -199,7 +199,12 @@ footer {
   align-items: center;
 }
 .home {
-  margin-top: 17%;
+  margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 20%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -233,7 +238,7 @@ footer {
   transform: rotate(180deg);
 }
 @media (max-width: 500px) {
-  .space-images {
+  .space-images img {
     width: 100%;
   }
 }
