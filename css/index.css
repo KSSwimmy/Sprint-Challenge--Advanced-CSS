@@ -161,11 +161,15 @@ p {
   margin: 0 auto;
 }
 nav {
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1%;
+  background-color: #c3eded;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  transition: top 0.3s;
 }
 .links {
   margin-top: 2%;
@@ -180,8 +184,9 @@ nav {
 }
 .links a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #454A59;
+  margin-bottom: 5%;
 }
 footer {
   color: #22283B;
@@ -192,6 +197,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 17%;
 }
 .home .intro h2 {
   padding: 15px;
