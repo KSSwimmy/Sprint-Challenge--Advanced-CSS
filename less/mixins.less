@@ -1,24 +1,52 @@
 // Mixins Here
+
+//Nav Mixins
 .style(@justify) {
     display: flex;
     justify-content: @justify;
 }
 
-.button(@button-color, @porcelain) {
-    font-size: 2rem;
-    background-color: @button-color;
-    color: @porcelain;
-    border-radius: 10px;
-    padding: 10px;
-    width: 40%;
-    cursor: pointer;
-    
-     @media @phone {
-    width: 100%;
-    padding: 25px 10px;
+.button(@btn-bg-color: #22283A, @width: 200px, @fC: white, @hbgc: rgb(255, 182, 0), @hfc: black ) {
+    color: @fC;
+    text-align: center;
+    background-color: @btn-bg-color;
+    width: @width;
     border-radius: 5px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 10px;
+   
 
-    } 
+    &:hover{
+        background-color: @hbgc;
+        color: @hfc;
+    }
+    
+    @media @phone {
+        width: 100%;
+        padding-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
 }
+
+// .button(@button-color, @porcelain) {
+//     font-size: 2rem;
+//     background-color: @button-color;
+//     color: @porcelain;
+//     border-radius: 10px;
+//     padding: 10px;
+//     width: 40%;
+//     cursor: pointer;
+
+   
+
+// &:hover{
+// background-color: @procelain;
+// color: @button-color;
+// }
+// }
+// }
 
    
